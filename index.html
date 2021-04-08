@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gold Miner</title>
+  </head>
+  <body>
+    <div id="navigateButtons">
+      <button onclick="tab('homeScreen')">Home Screen</button>
+      <button onclick="tab('crystalMenu')">Crystal Shop</button>
+      <button onclick="tab('gym')">The Gym</button>
+    </div>
+    <div id="homeScreen">
+      <p id="goldMined">0 Gold Mined || 0 Crystals Found</p>
+      <p id="totalGold">Total earned: 0</p>
+      <button onclick="mineGold()" id="mineGold">Mine 1 Gold</button>
+      <button onclick="buyGoldPerClick()" id="perClickUpgrade">Upgrade Pickaxe Cost: 10 Gold</button>
+      <p>Increase amount of Pickaxe price drop by 1/tick</p>
+      <button onclick="decreaseCostPerClick()" id="perClickPriceDrop">10000 gold</button>
+      <p id="handle">Buy a new handle and increase your mining multiplier by 10% || Current Multi: 1 || Price: 5000</p>
+      <button onclick="buyHandle()" id="handleUpgrade">New Handle</button> 
+      <p>Better Lighting: Helps to find crystals in the dark</p>
+      <button onclick="buyLight()" id="buyLight">Buy Light || 5000 gold</button>
+      <p>Better Gloves: Pick up more crystals at once</p>
+      <button onclick="buyGloves()" id="buyGloves">Buy Gloves || 10000 gold</button>
+      <p>WARNING: No confirmation on the button below, it will reset the game entirely with no benefit to you</p>
+      <button onclick="reset()" id ="reset">RESET GAME</button>
+      <button onclick="giveGold()" id="giveGold">Give Gold Cheat</button>
+      <button onclick="giveStrength()" id="giveStrength">Give Strength Cheat</button>
+    </div>
+    <div id="crystalMenu">
+      <p>With the power of crystals you can upgrade the head of your pickaxe, as well as a few other bonuses!</p>
+      <p id="crystalsOwned">0 Gold Mined || 0 Crystals Found</p>
+      <p>Improve Cart</p>
+      <button onclick="cartBuy()" id="cartBuy">50 Crystal</button>
+      <p>Harden Pick</p>
+      <button onclick="pickHead()" id ="pickHead">5000 crystal || Hardness: 1</button>
+    </div>
+    <div id="gym">
+      <p>Experience the thrill of getting stronger without leaving your home! Buy a gym membership for only 5000 gold per second! What a steal!</p>
+      <button onclick="buyMembership()" id ="membership">Buy Membership</button>
+      <p id="strength">Strength: 1</p>
+      <p>Focus your training on grip strength</p>
+      <button onclick="buyGrip()" id="grip">Train Grip || 200 Strength</button>
+    </div>
+    <script src="js/gym.js"></script>
+    <script src="js/beautify.js"></script>
+    <script src="js/devCheats.js"></script>
+   
+    
+    <script src="js/main.js" charset="utf-8" type="text/javascript"></script>
+  </body>
+</html>
